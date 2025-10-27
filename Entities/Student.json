@@ -1,0 +1,36 @@
+{
+    "name": "Student",
+    "type": "object",
+    "properties": {
+      "user_id": {
+        "type": "string",
+        "description": "Reference to User entity"
+      },
+      "nis": {
+        "type": "string",
+        "description": "Student identification number"
+      },
+      "name": {
+        "type": "string",
+        "description": "Student full name"
+      },
+      "class_id": {
+        "type": "string",
+        "description": "Reference to Class entity"
+      },
+      "class_name": {
+        "type": "string",
+        "description": "Class name for easy reference"
+      },
+      "parent_phone": {
+        "type": "string",
+        "description": "Parent/guardian phone number"
+      }
+    },
+    "required": [
+      "user_id",
+      "nis",
+      "name",
+      "class_id"
+    ]
+  }

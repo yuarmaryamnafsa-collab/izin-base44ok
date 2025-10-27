@@ -1,0 +1,26 @@
+{
+  "name": "Class",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Class name (e.g., X IPA 1)"
+    },
+    "teacher_id": {
+      "type": "string",
+      "description": "ID of the homeroom teacher (wali kelas)"
+    },
+    "teacher_name": {
+      "type": "string",
+      "description": "Name of the homeroom teacher"
+    },
+    "grade_level": {
+      "type": "string",
+      "description": "Grade level (X, XI, XII)"
+    }
+  },
+  "required": [
+    "name",
+    "teacher_id"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+    "name": "Permission",
+    "type": "object",
+    "properties": {
+      "student_id": {
+        "type": "string",
+        "description": "Reference to Student entity"
+      },
+      "student_name": {
+        "type": "string",
+        "description": "Student name for easy reference"
+      },
+      "student_nis": {
+        "type": "string",
+        "description": "Student NIS for easy reference"
+      },
+      "class_name": {
+        "type": "string",
+        "description": "Class name for easy reference"
+      },
+      "permission_date": {
+        "type": "string",
+        "format": "date",
+        "description": "Date when permission is needed"
+      },
+      "reason": {
+        "type": "string",
+        "enum": [
+          "sick",
+          "family_emergency",
+          "school_activity",
+          "other"
+        ],
+        "description": "Reason for permission"
+      },
+      "description": {
+        "type": "string",
+        "description": "Additional details"
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "pending",
+          "approved",
+          "rejected"
+        ],
+        "default": "pending",
+        "description": "Permission status"
+      },
+      "reviewed_by": {
+        "type": "string",
+        "description": "Email of teacher who reviewed"
+      },
+      "reviewed_by_name": {
+        "type": "string",
+        "description": "Name of teacher who reviewed"
+      },
+      "reviewed_date": {
+        "type": "string",
+        "format": "date-time",
+        "description": "When the permission was reviewed"
+      },
+      "rejection_reason": {
+        "type": "string",
+        "description": "Reason if rejected"
+      }
+    },
+    "required": [
+      "student_id",
+      "permission_date",
+      "reason"
+    ]
+  }
